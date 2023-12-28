@@ -1,0 +1,793 @@
+body,h1,h2,h3,h4,h5,h6,p,a,span{
+    font-family: 'Nunito', sans-serif;
+}
+
+/** Began main css  **/
+
+.bg-color{
+    background: #F7F6FB;
+}
+
+/** hedar section css  **/
+
+.hedar-search span{
+    font-size: 20px;
+    margin-right: 20px;
+    margin-left: 50px;
+    font-weight: 400;
+}
+.hedar-info{
+    margin-left: 100px;
+}
+.hedar-call span{
+    font-size: 20px;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: rgb(255, 200, 1);
+    display: block;
+}
+.call-info a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+.main-hedar{
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+/** hedar menu section css **/
+
+.primary-menu{
+    list-style: none;
+}
+.primary-menu li{}
+.primary-menu li a{
+    display: block;
+    color: #000;
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 18px;
+}
+
+/** Drop down menu  css **/
+
+.primary-menu li{
+    position: relative;
+}
+.primary-menu li ul{
+    position: absolute;
+    top: 230%;
+    left: 0;
+    width: 200px;
+    background: #000;
+    list-style: none;
+    color: #fff;
+    padding-left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+    transform-origin: top center;
+    transform: scaleY(0);
+}
+.primary-menu li ul li{
+    margin-top: 20px;
+}
+.primary-menu li ul li a{
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 800;
+    transition: .4s;
+}
+/** hedar hover css  **/
+.primary-menu li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+.primary-menu li ul li a:hover{
+    color: orange;
+    letter-spacing: 2px;
+}
+
+/** banner section css **/
+.banner-section{
+    background: url(img/banner-removebg-preview.png) no-repeat top center;
+    padding: 200px;
+    background-size: cover;
+}
+ .banner-img{
+    position: relative;
+ }
+ .banner-img img{
+    max-width: 100%;
+    height: 550px;
+    margin-top: 80px;
+ }
+ .man-img{
+    position: absolute;
+    top: -20px;
+    left: 0;
+ }
+ .man-img img{
+    width: 650px;
+    height: 650px;
+    margin-top: 50px;
+ }
+ .banner-content{
+   margin-top: 140px;
+ }
+ .banner-content h6{
+    font-size: 20px;
+    font-weight: 900;
+    color: rgb(255, 200, 1);
+ }
+ .banner-content h1{
+    font-size: 60px;
+    font-weight: 800;
+ }
+ .banner-content p{
+    font-size: 18px;
+ }
+.banner-button a{
+    background: rgb(255, 200, 1);
+    padding: 12px 40px;
+    border-color:rgb(255, 200, 1);
+    border-radius: 25px 25px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: .5s;
+}
+.banner-button a:hover{
+    background: dodgerblue;
+    border-color: dodgerblue;
+}
+
+/** about section css  **/
+
+.about-text h6{
+    font-size: 18px;
+    color: rgb(255, 200, 1);
+    font-weight: 700;
+    position: relative;
+}
+.about-text h6::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100px;
+    background: rgb(255, 200, 1);
+    top: 15px;
+    left: 130px;
+}
+.about-text h1{
+    font-weight: 700;
+}
+.about-text p{
+    color: #767676;
+}
+
+.count{
+    padding: 40px 30px;
+    background: #fff;
+    text-align: center;
+    box-shadow: 4px 4px 20px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+.count::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 149px;
+    top: 0;
+    left: 0;
+    background: rgb(255, 200, 1);
+}
+.about-count h3{
+    color: rgb(255, 200, 1);
+    font-weight: 700;
+}
+.about-count h6{
+    color: #767676;
+}
+
+/** services section css  **/
+
+.service-text h6{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(255, 200, 1);
+    position: relative;
+}
+.service-text h6::before{
+    content: "";
+    width: 90px;
+    height: 2px;
+    position: absolute;
+    top: 12px;
+    left: 510px;
+    background: rgb(255, 200, 1);
+}
+.service-text h6::after{
+    content: "";
+    width: 90px;
+    height: 2px;
+    position: absolute;
+    top: 12px;
+    right: 510px;
+    background: rgb(255, 200, 1);
+}
+.service-text h1{
+    font-weight: 700;
+}
+.service-text p{
+    color: #767676;
+}
+
+.service-box{
+    box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    transition: .5s;
+}
+.service-icon i{
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+.service-content h3{
+    font-weight: 700;
+}
+.service-content p{
+    font-size: 20px;
+    color: #767676;
+}
+/** service hover css  **/
+
+.service-box:hover{
+    box-shadow: 15px 15px 0 0 rgb(255, 200, 1);
+}
+
+/** team section css  **/
+
+.team-btn{
+  margin-left: 740px;
+  margin-top: 30px;
+}
+.team-btn a{
+    display: block;
+    padding: 12px 30px;
+    background: rgb(255, 200, 1);
+    color: #000;
+    border-radius: 25px 25px;
+    border-color: rgb(255, 200, 1);
+    font-size: 20px;
+    font-weight: 700;
+    transition: .5s;
+}
+.team-btn a:hover{
+    background: #000;
+    border-color: #000;
+}
+.team-text h6{
+    font-size: 18px;
+    color: rgb(255, 200, 1);
+    font-weight: 700;
+}
+.team-text h1{
+    font-weight: 700;
+}
+
+.team-tab-item li a{
+    background: #fff;
+    color: #000;
+    display: block;
+    margin-right: 10px;
+    font-weight: 800;
+    padding: 10px 20px;
+}
+.team-tab-item li a{
+    border-radius: 8px;
+}
+.team-tab-item li a.active{
+    background: rgb(255, 200, 1);
+    border-radius: 8px;
+}
+
+/*** member css **/
+
+.member-content{
+    background: #fff;
+    padding-bottom: 15px;
+    border-radius: 20px;
+}
+.member-img img{
+    width: 100%;
+    border-radius: 20px 20px;
+    transition: all ease .4s;
+}
+.member-text{
+    margin-left: 20px;
+}
+.member-text h4{
+    font-size: 20px;
+    font-weight: 700;
+}
+.member-text h6{
+    color: #767676;
+}
+.member-social ul{
+    list-style: none;
+    padding-left: 0;
+    margin-left: 15px;
+}
+.member-social ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 0 7px;
+    font-size: 18px;
+}
+.member-content{
+    transition: .5s;
+    overflow: hidden;
+}
+.member-content:hover .member-img img{
+    transform: scale(1.1);
+}
+
+/** work section css  **/
+
+.work-section{
+    background: #000;
+}
+.work-content img{
+    max-width: 100%;
+    position: relative;
+}
+.work-text{
+    position: absolute;
+    top: 220px;
+    left: 50px;
+}
+.work-content{
+    position: relative;
+  
+}
+.work-content::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+   
+}
+.work-text{
+    z-index: 9;
+    color: #fff;
+}
+.work-head h6{
+    font-size: 20px;
+    color: rgb(255, 200, 1);
+    font-weight: 700;
+    position: relative;
+}
+.work-head h6::after{
+    content: "";
+    width: 90px;
+    height: 2px;
+    position: absolute;
+    top: 15px;
+    left: 85px;
+    background: rgb(255, 200, 1);
+}
+.work-head h1{
+    color: #fff;
+    font-weight: 700;
+}
+
+.work-content{
+    position: relative;
+}
+.work-content::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255, 200, 1, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+}
+.work-content:hover.work-content::after{
+    opacity: 1;
+    visibility: visible;
+}
+
+/** pricing table section  **/
+.pricing-section{
+    background: #E7E7E9;
+}
+
+.pricing-tab .main-tab{
+    display: flex;
+    justify-content: center;
+  
+}
+.main-tab li{
+    background: #fff;
+    padding: 20px 40px;
+}
+.main-tab .item-1{
+    border-radius: 40px 0 0 40px;
+}
+.main-tab .item-2{
+    border-radius: 0 40px 40px 0;
+}
+.main-tab li a{
+    display: block;
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+}
+.main-tab li a.active{
+    display: block;
+    background: rgb(255, 200, 1);
+    padding: 12px 40px;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 700;
+}
+.pricing-tab .main-content{
+    display: flex;
+    justify-content: center;
+}
+
+/** table section css  **/
+.table-content{
+    background: #fff;
+    padding: 70px;
+}
+.table-img{
+    text-align: center;
+}
+.table-content h4{
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.table-content h1{
+    font-size: 80px;
+    font-weight: 700;
+}
+.table-content h1 span{
+    font-size: 18px;
+}
+.table-menu ul{
+    list-style: none;
+    padding-left: 0;
+}
+.table-menu li{
+    display: block;
+    margin-bottom: 15px;
+    font-size: 17px;
+    color: #767676;
+}
+.table-menu li span{
+   
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: rgb(255, 200, 1);
+    padding: 8px;
+    color: #000;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.table-button a{
+    display: block;
+    padding: 12px 30px;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    transition: .5s;
+    font-size: 18px;
+    font-weight: 600;
+}
+.table-button a:hover{
+    background: rgb(255, 200, 1);
+}
+.table-content{
+    position: relative;
+}
+.table-button{
+    position: absolute;
+    bottom: -15px;
+    left: 100px;
+}
+
+/** contact section css  **/
+
+.area-content h1{
+    font-weight: 700;
+}
+
+.area-text .area-icon span{
+    font-size: 28px;
+    color: #fff;
+    background: #000;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    padding: 10px 20px;
+    margin-right: 20px;
+   
+}
+.office-text{
+    margin-top: -15px;
+}
+.office-text h4{
+    font-weight: 700;
+}
+
+
+.call-text .call-icon span{
+    font-size: 28px;
+    color: #fff;
+    background: #000;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    padding: 10px 18px;
+    margin-right: 20px;
+}
+.call-content{
+    margin-top: -15px;
+}
+.call-content h4{
+    font-weight: 700;
+}
+
+.mail-text .mail-icon span{
+    font-size: 28px;
+    color: #fff;
+    background: #000;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    padding: 10px 16px;
+    margin-right: 20px;
+}
+.mail-content{
+    margin-top: -15px;
+}
+.mail-content h3{
+    font-weight: 700;
+    font-size: 22px;
+}
+
+/**  contact form css  **/
+.contact-form h1{
+    font-weight: 700;
+}
+.form-1 .form-group input{
+    padding: 12px 47px;
+}
+.form-2 .form-group input{
+    padding: 12px 47px;
+}
+.form-group textarea{
+    height: 120px;
+}
+.ap-btn a{
+    background: rgb(255, 200, 1);
+    display: block;
+    border-color: rgb(255, 200, 1);
+    padding: 12px 0;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.ap-btn a:hover{
+    background: #000;
+    border-color: #000;
+}
+
+/** footer section css **/
+
+.footer{
+    background: #000;
+    color: #fff;
+    position: relative;
+}
+.footer::before{
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(255, 200, 1);
+}
+.get-btn a{
+   
+    padding: 12px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    background: rgb(255, 200, 1);
+    border-color: rgb(255, 200, 1);
+    border-radius: 25px;
+    transition: .5s;
+    margin-left: 320px;
+}
+.get-btn a:hover{
+    background: #fff;
+    color: #000;
+    border-color: #fff;
+}
+.footer h3{
+    font-weight: 700;
+}
+
+/** footer top section css  **/
+
+.footer-top{
+    border-bottom: 1px solid #444;
+}
+
+.footer-widget h4{
+    font-weight: 700;
+}
+.about-btn a{
+    padding: 10px 25px;
+    font-weight: 700;
+    background: rgb(255, 200, 1);
+    border-radius: 25px;
+    border-color: rgb(255, 200, 1);
+}
+.about-btn a:hover{
+    background: #fff;
+    color: #000;
+    border-color: #fff;
+}
+
+.send-btn a{
+    font-size: 20px;
+    color: #fff;
+    background: rgb(255, 200, 1);
+    padding: 7px 15px;
+    border-radius: 10px;
+    transition: .4s;
+}
+.send-btn a:hover{
+    background: #fff;
+    color: #000;
+}
+.form-group{
+    margin-bottom: 20px;
+    position: relative;
+}
+.send-btn{
+    position: absolute;
+    top: 5px;
+    right: -15px;
+}
+.footer-widget .form-group input{
+    background: #000;
+    border-color: #767676;
+    border-radius: 12px;
+}
+
+.footer-social ul{
+    list-style: none;
+    padding-left: 0;
+}
+.footer-social ul li a{
+    display: block;
+    padding: 0 7px;
+    color: #fff;
+    font-size: 20px;
+    transition: .4s;
+}
+.footer-social ul li a:hover{
+    color: rgb(255, 200, 1);
+}
+
+.footer-widget h4{
+    font-weight: 700;
+}
+.official-info span{
+    font-size: 25px;
+    color: rgb(255, 200, 1);
+    margin-right: 10px;
+}
+.official-text a{
+    text-decoration: none;
+    color: #fff;
+}
+.location-info span{
+    font-size: 22px;
+    color: rgb(255, 200, 1);
+    margin-right: 10px;
+}
+.location-info a{
+    text-decoration: none;
+    color: #fff;
+}
+.footer-widget p{
+    color: #767676;
+}
+
+.gallery-img img{
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+
+/* responsive css  */
+@media (max-width:1050px) {
+    .team-btn a{
+        
+       font-size: 16px;
+       width: 100%;
+    }
+    .table-content{
+        margin-bottom: 20px;
+    }
+}
+@media(max-width:992px) {
+    .work-content{
+        margin-bottom: 20px;
+    }
+
+    .table-content{
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width:768px) {
+    .service-box{
+      margin-bottom: 20px;
+    }
+   .team-tab .team-tab-item .mav-item a{
+        margin-right: 15px;
+    }
+    .member-content{
+        margin-bottom: 20px;
+    }
+    
+    .work-content{
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:470px) {
+    .banner-content h1{
+        font-size: 40px;
+     }
+     .banner-content h6{
+        font-size: 16px;
+     }
+     .banner-content p{
+        font-size: 15px;
+     }
+     .logo-img{
+        text-align: center;
+        margin-bottom: 15px;
+     }
+
+     .count{
+        margin-bottom: 15px;
+    }
+}
